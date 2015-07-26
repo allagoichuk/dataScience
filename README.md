@@ -1,6 +1,22 @@
-# dataScience
-## this project was created on 14 of JUNE 2015
-### and this is my gateway to the exciting world of data science and machine learning
-#### this is my way to the future
+## Getting and Cleaning Data Course Project
 
-data science project
+The following script run_analysis.r contains functions to be used for cleaning the data obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip that represents Human Activity Recognition Using Smartphones Data Set.
+
+## Data cleaning
+
+The data cleaning performed by the functions from run_analysis.r script includes the following transformations:
+
+* Merges the training and the test sets to create one data set.
+* Extracts only the measurements on the mean and standard deviation for each measurement. 
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive variable names. 
+* From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+## Running the analysis
+
+To obtain tidy data set from the original data, the following steps shuld be performed:
+
+* Download the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+* Unzip the package manually to the working directory
+* In the same working directory run the function run_analisys from the run_analisys.r script. Save the outcome of the function as fullData. 
+* To obtain the cleaned data run the method getSummary(fullData) from run_analisys.r script passing the fullData obtained on the previous step. The text file with cleaned data "tidydata.txt" will be saved in the working directory
