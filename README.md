@@ -18,5 +18,4 @@ To obtain tidy data set from the original data, the following steps shuld be per
 
 * Download the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 * Unzip the package manually to the working directory
-* In the same working directory run the function run_analisys from the run_analisys.r script. Save the outcome of the function as fullData. 
-* To obtain the cleaned data run the method getSummary(fullData) from run_analisys.r script passing the fullData obtained on the previous step. The text file with cleaned data "tidydata.txt" will be saved in the working directory
+* In the same working directory run the script "run_analisys.r". The text file with cleaned data "tidydata.txt" will be saved in the working directory

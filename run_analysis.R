@@ -38,8 +38,10 @@ getSummary <- function(dataFrame) {
     #split dataframe by subject and activity
     ncol <- ncol(dataFrame)
     
-    summary <- aggregate(dataFrame[, 3:ncol], list("subject" = data$subject, "activity" = data$activity), mean)
+    summary <- aggregate(dataFrame[, 3:ncol], list("subject" = dataFrame$subject, "activity" = dataFrame$activity), mean)
     write.table(summary, file = "tidydata.txt", row.names = FALSE)
     
     summary
 }
+
+getSummary(run_analysis()) 
